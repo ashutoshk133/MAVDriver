@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MAV Driver</string>
+    <string name="title_activity_forgot_pwd">ForgotPwd</string>
 </resources>
