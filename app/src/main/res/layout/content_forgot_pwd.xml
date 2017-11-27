@@ -1,30 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.techwarriors.mavdriver.ForgotPwd"
     tools:showIn="@layout/activity_forgot_pwd">
 
 
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <EditText
             android:id="@+id/UTAID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="93dp"
             android:hint="UTAID"
             android:inputType="number"
-            android:paddingTop="200dp"
-            android:paddingLeft="50dp"
+            android:maxLength="10"/>
 
-            />
+
         <Button
+            android:id="@+id/next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Next"
-            android:layout_below="@+id/UTAID"/>
+            android:layout_below="@+id/UTAID"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:text="Next" />
 
 
-</android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

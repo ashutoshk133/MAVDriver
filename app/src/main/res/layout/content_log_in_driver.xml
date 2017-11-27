@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.techwarriors.mavdriver.LogInDriver"
+    tools:showIn="@layout/activity_log_in_driver">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg">
+
+
+        <EditText
+            android:id="@+id/Pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/login"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            tools:layout_editor_absoluteX="83dp"
+            tools:layout_editor_absoluteY="155dp" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="175dp"
+            android:text="Log In"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="255dp"
+            android:shadowColor="#bfbfbf"
+            />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <TextView
+            android:id="@+id/forgotpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/login"
+            android:textColor="#304bb6"
+            android:clickable="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="88dp"
+            android:text="Forgot Password?" />
+
+        <EditText
+            android:id="@+id/UTAID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Pwd"
+            android:layout_alignStart="@+id/Pwd"
+            android:ems="10"
+            android:hint="UTA ID"
+            android:inputType="number"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/guideline"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/escort" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

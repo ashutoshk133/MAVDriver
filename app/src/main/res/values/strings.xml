@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">MAV Driver</string>
-    <string name="title_activity_forgot_pwd">ForgotPwd</string>
+    <string name="title_activity_forgot_pwd">Forgot Password</string>
+    <string name="title_activity_start">Start</string>
+    <string name="title_activity_current_pickup">Current Pickup</string>
+    <string name="title_activity_current_trip">Current Trip</string>
+    <string name="title_activity_assign_ride">Assign Ride</string>
+    <string name="title_activity_log_in_driver">MAV Driver</string>
+    <string name="title_activity_confirm_ans">Confirm Answer</string>
+    <string name="title_activity_reset_pass">Reset Password</string>
 </resources>

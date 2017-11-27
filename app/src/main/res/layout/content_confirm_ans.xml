@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.techwarriors.mavdriver.ConfirmAns"
+    tools:showIn="@layout/activity_confirm_ans">
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="37dp"
+        android:text="UTA ID :" />
+
+    <TextView
+        android:id="@+id/utaid2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/TextView"
+        android:layout_marginStart="60dp"
+        android:layout_toEndOf="@+id/TextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/TextView"
+        android:layout_below="@+id/TextView"
+        android:layout_marginTop="19dp"
+        android:text="Security Question :"
+        android:id="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/tvsecque"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_marginStart="37dp"
+        android:layout_toEndOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/etsecans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="44dp"
+        android:hint="Security Answer"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="37dp"
+        android:layout_toEndOf="@+id/TextView"
+        android:text="Verify" />
+</RelativeLayout>

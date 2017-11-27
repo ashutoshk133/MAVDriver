@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.techwarriors.mavdriver.CurrentTrip"
+    tools:showIn="@layout/activity_current_trip"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:id="@+id/riders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="55dp"
+        android:text="Riders : "
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/src1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/riders"
+        android:layout_below="@+id/riders"
+        android:layout_marginTop="25dp"
+        android:text="Source :"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/des1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/src1"
+        android:layout_below="@+id/src1"
+        android:layout_marginTop="21dp"
+        android:text="Destination :"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/tvriders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/riders"
+        android:layout_marginStart="55dp"
+        android:layout_toEndOf="@+id/riders"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/tvsrc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/src1"
+        android:layout_toEndOf="@+id/tvriders"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/tvdes1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvsrc1"
+        android:layout_alignTop="@+id/des1"
+        android:textColor="#ffffff"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="35dp"
+        android:layout_marginEnd="31dp"
+        android:clickable="true"
+        app:backgroundTint="@android:color/holo_green_light"
+        app:srcCompat="@drawable/location" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/SOS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fab"
+        android:layout_alignStart="@+id/des1"
+        android:clickable="true"
+        app:backgroundTint="@android:color/holo_red_dark"
+        app:srcCompat="@android:drawable/ic_menu_call" />
+
+</RelativeLayout>
